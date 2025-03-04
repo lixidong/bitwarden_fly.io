@@ -1,0 +1,8 @@
+[build]
+  buildpacks = ["fnkr/code:fn"]
+  [build.args]
+    BASE_IMAGE = "registry.cn-hongkong.aliyuncs.com/vw-cache/vaultwarden"
+
+[deploy]
+  strategy = "immediate"
+  max_unavailable = 0
